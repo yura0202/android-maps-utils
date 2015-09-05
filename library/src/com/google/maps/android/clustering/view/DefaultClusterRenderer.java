@@ -74,7 +74,7 @@ import static com.google.maps.android.clustering.algo.NonHierarchicalDistanceBas
  * The default view for a ClusterManager. Markers are animated in and out of clusters.
  */
 public class DefaultClusterRenderer<T extends ClusterItem> implements ClusterRenderer<T> {
-    private static final boolean SHOULD_ANIMATE = Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB;
+    private static final boolean SHOULD_ANIMATE = false;
     private final GoogleMap mMap;
     private final IconGenerator mIconGenerator;
     private final ClusterManager<T> mClusterManager;
